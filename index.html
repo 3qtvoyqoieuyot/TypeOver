@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeOver</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    body {
+      background: #1B3B8C;
+      color: #FFFFFF;
+      text-align: center;
+      font-family: "Nunito", Helvetica, sans-serif;
+      margin: 0;
+      padding: 1em;
+    }
+    a {
+      text-decoration: none;
+      color: #009DFF;
+    }
+    h1 {
+      font-size: 50pt;
+      text-align: center;
+      margin: 0;
+    }
+    h2 {
+      font-size: 30pt;
+      margin-top: 0.2em;
+    }
+    h3 {
+      font-size: 20pt;
+      margin-top: 1.5em;
+    }
+    p {
+      text-align: left;
+      font-size: 16pt;
+      max-width: 800px;
+      margin: 0 auto 1em auto;
+    }
+    ul {
+      text-align: left;
+      font-size: 16pt;
+      max-width: 800px;
+      margin: 0 auto 1em auto;
+    }
+    iframe {
+      margin-top: 1em;
+      border: none;
+    }
+    .hehe {
+      color: #949494
+    }
+  </style>
+</head>
+<body>
+
+  <h1>TypeOver</h1>
+  <h2>An absolutely nightmarish superset of 
+    <a href="https://scratchfakemon.github.io/rollover/">Rollover</a>
+  </h2>
+
+  <h3>What is Rollover?</h3>
+  <p>
+    Rollover is an esoteric programming language created by 
+    <a href="https://scratchfakemon.github.io/">Scratch_Fakemon</a>. It works by having an array of 256 cells represented with the values 0-255. 
+    Each cell can go between 0-255 too, and once you increment it above 255, it rolls over to 0, giving Rollover its name.
+    Rollover uses the following commands in its syntax:
+  </p>
+  <ul>
+    <li><strong>n</strong> - moves to the next cell</li>
+    <li><strong>i</strong> - increments the current cell's value</li>
+    <li><strong>c[]</strong> - loops the code inside the brackets until the value of the cell equals the cell's index</li>
+    <li><strong>p</strong> - prints the current cell's value as a number</li>
+    <li><strong>a</strong> - prints the current cell's value as an ASCII character</li>
+    <li><strong>u</strong> - prints the current cell's value as a UTF-8 character</li>
+  </ul>
+  <p class = "hehe">(yes I yoinked this stuff from the Rollover page but I tried to mix it up)</p>
+
+  <h3>What does TypeOver add?</h3>
+  <p>TypeOver adds the following new features:</p>
+  <ul>
+    <li>When incrementing a cell's value, if the value is considered unlucky in Chinese culture, the interpreter throws an error.</li>
+    <li>The interpreter now throws random errors for absolutely no reason, just to annoy you :)</li>
+    <li>The interpreter now has an attitude</li>
+    <li>Errors are shown after the program finishes running</li>
+    <li>There is now an arbitrary 0.1 second pause between the execution of each individual instruction</li>
+    <li>It's written in Python because I don't know JS</li>
+  </ul>
+
+  <h3>Try it out!</h3>
+  <iframe src="https://trinket.io/embed/python/fa2136ccf75a?outputOnly=true&runOption=run" width="80%" height="400"></iframe>
+
+</body>
+</html>
